@@ -1,0 +1,519 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rufina:wght@700&display=swap');
+
+
+
+:root {
+  --azul: #003d5f;
+  --azulClaro: #0089d1;
+  --grisFondo: #333333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rufina";
+  color: white;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  /* width: fit-content; */
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: rgb(41, 41, 41);
+}
+
+h3 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+h4 {
+  font-size: 1.6rem;
+  color: rgb(41, 41, 41);
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+/* --------------------------------- HEADER --------------------------------- */
+
+.navbar-brand {
+  font-size: 1.7rem!important;
+}
+
+.text-white {
+  font-size: 1.2rem;
+  
+}
+/* --------------------------------- HEADER --------------------------------- */
+
+.navbar {
+  background-color: #003d5f;
+}
+.navbar-collapse {
+  flex-grow: 0;
+}
+.navbar-brand {
+  font-size: 1.5rem!important;
+}
+
+.text-white {
+  font-size: 1.2rem;
+  
+}
+.hamburguerX {
+  margin-left: 70px;
+}
+.container-fluid{
+
+  --bs-gutter-x: -0.5rem!important;
+}
+
+
+/* ------------------------------ MAIN SECTION ------------------------------ */
+.container_main {
+  position: relative; 
+  height: 100%!important;
+  padding: 3rem 1.5rem;
+  width: 100%;
+}
+
+.container_main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/main_photo.jpg);
+  background-size: cover;
+  background-position: 30% center; /* Ajusta el valor para mover la imagen */
+  opacity: 0.4; /* Ajusta la opacidad según tu preferencia */
+  z-index: -1;
+}
+
+
+
+
+
+.container_main h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-top: 5.5rem;
+}
+
+.container_main p {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-size: 1.15rem;
+  font-weight: 300;
+}
+
+.container_main button {
+  width: 100%;
+  border: 3px solid var(--azulClaro);
+  color: var(--azulClaro);
+}
+
+/* --------------------------- TESTIMONIAL SECTION -------------------------- */
+
+.container_testimonial {
+  background-color: rgb(214, 214, 214);
+  padding: 60px 30px;
+  width: 100%;
+}
+
+.container_testimonial h3:first-child{
+
+  color:black
+}
+
+
+
+.container_testimonial p:first-child {
+  font-size: 1.6rem;
+  color: rgb(41, 41, 41);
+  font-weight: 700;
+}
+
+.container_testimonial p:last-child {
+  color: rgb(41, 41, 41);
+  font-size: 1.2rem;
+}
+
+/* ----------------------------- ESPECIALIDADES ----------------------------- */
+
+.container_especialidades1 {
+  padding: 60px 30px;
+  position: relative;
+  text-align: center;
+  height: 350px;
+}
+
+.container_especialidades1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/especialiaddes_photo.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4; /* Ajusta la opacidad según tu preferencia */
+  z-index: -1;
+}
+
+.container_especialidades1 p {
+  margin-top: 20px;
+  padding: 5px;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.container_especialidades1 h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.container_especialidades1 h2,
+.container_especialidades1 p {
+  color: rgb(255, 255, 255);
+}
+
+.container_especialidades1 img {
+  margin-top: 30px;
+  width: 100%;
+}
+
+/* ---------------------------- SERVICIOS SECCION --------------------------- */
+.container_servicios {
+  padding: 60px 30px;
+  background-color: var(--grisFondo);
+  font-size: 16px;
+}
+
+.container_servicios h2 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.container_servicios ul li {
+  list-style: none;
+  padding: 0px 0px 20px 0px;
+  font-size: 1.7rem;
+}
+/* -------------------------- EMERITA LEGAL SECTION ------------------------- */
+.container_emerita {
+  padding: 60px 30px;
+  background-color: white;
+  width: 100%;
+}
+
+.container_emerita h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container_emerita p {
+  color: rgb(41, 41, 41);
+  font-size: 0.9rem;
+}
+
+.container_emerita button {
+  width: 100%;
+  border: 2.5px solid var(--azulClaro);
+  margin-top: 20px;
+}
+
+.container_emerita img {
+  margin-top: 30px;
+  width: 100%;
+}
+
+/* ---------------------- CLIENTES PRINCIPALES SECTION ---------------------- */
+
+.container_clientes {
+  background-color: rgb(232, 232, 232);
+  padding: 60px 30px;
+  width: 100%;
+}
+
+.container_clientes img {
+  margin-top: 30px;
+  width: 100%;
+  border-radius: 20px;
+  border: 20px solid white;
+  /* padding: 50px; */
+}
+
+/* ------------------------------- FORMULARIO ------------------------------- */
+
+.container_form {
+  background-color: rgb(255, 255, 255);
+  padding: 60px 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container_form label,
+.container_form p {
+  color: black;
+  font-size: 0.9rem;
+  padding-right:56px
+}
+
+.container_form form {
+  margin-top: 30px;
+}
+
+.form_bold {
+  font-weight: 700;
+  color: black;
+}
+
+.container_form button {
+  width: 100%;
+  border: 2.5px solid var(--azulClaro);
+}
+
+#exampleFormControlInput1,
+#exampleFormControlInput2,
+#formControlInput3 {
+  background-color: rgb(232, 232, 232);
+}
+
+/* ----------------------------- FOOTER SECTION ----------------------------- */
+
+.container_footer {
+  background-color: rgb(107, 107, 107);
+  padding: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container_footer h4 {
+  color: white;
+}
+
+.container_footer p {
+  color: rgb(255, 255, 255);
+}
+
+@media (min-width: 1280px) {
+  /* ----------------------------- CONTAINER MAIN ----------------------------- */
+  .container_main {
+    position: relative;
+    height: 95vh;
+    padding: 120px 30px;
+    width: 100%;
+    padding-left: 10%;
+  }
+
+  .container_main::before {
+    opacity: 0.3; /* Ajusta la opacidad según tu preferencia */
+  }
+  .container_main h1 {
+    margin-top: 140px;
+    font-size: 4.5rem;
+    font-weight: 400;
+    padding-right: 61%;
+  }
+
+  .container_main p {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 1.3rem;
+    padding-right: 56%;
+
+    font-weight: 300;
+  }
+
+  .container_main button {
+    width: auto;
+    padding: 13px 25px;
+  }
+
+  /* -------------------------- TESTIMONIALS SECTION -------------------------- */
+  .container_testimonial {
+    background-color: rgb(255, 255, 255);
+    padding: 60px 30px;
+  }
+
+  .container_testimonial p:first-child {
+    font-size: 1.6rem;
+    color: rgb(41, 41, 41);
+    font-weight: 700;
+    padding-right: 30%;
+    padding-left: 10%;
+  }
+
+  .container_testimonial p:last-child {
+    color: rgb(41, 41, 41);
+    font-size: 1.2rem;
+    padding-left: 10%;
+  }
+
+  /* -------------------------------- ESPECIALIDADES ------------------------------- */
+  .container_especialidades1 p {
+    margin-top: 20px;
+    padding: 5px;
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+
+  .container_especialidades1 h2 {
+    font-size: 5rem;
+    font-weight: 400;
+    margin: 0% 70%;
+  }
+
+  .container_especialidades1 {
+    padding: 60px 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 702px;
+  }
+
+  /* -------------------------------- SERVICIOS ------------------------------- */
+  .container_servicios {
+    padding: 5% 8%;
+    background-color: var(--grisFondo);
+  }
+
+  .container_servicios h2 {
+    color: white;
+    margin-bottom: 60px;
+  }
+
+  .container_servicios ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    padding: 0;
+  }
+
+  .container_servicios ul li {
+    list-style: none;
+    padding: 0px 0px 20px 0px;
+    font-size: 1.5rem;
+  }
+
+  /* ---------------------------- CONTAINER EMERITA --------------------------- */
+  .container_emerita {
+    padding: 60px 30px;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .container_emerita h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .container_emerita p {
+    color: rgb(41, 41, 41);
+    font-size: 18px;
+    line-height: 28px;
+    font-family: serif, sans-serif
+    
+  }
+
+  .container_emerita button {
+    width: auto;
+    font-size: 1rem;
+    border: 2px solid var(--azulClaro);
+    margin-top: 20px;
+  }
+
+  .container_emerita img {
+    margin-top: 30px;
+    width: 65%;
+  }
+
+  .container_img_emerita {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container_content_emerita {
+    width: 60%;
+    padding-right: 10%;
+  }
+
+  /* -------------------------------- CLIENTES -------------------------------- */
+  .container_clientes {
+    background-color: rgb(232, 232, 232);
+    padding: 60px 30px;
+    width: 100%;
+  }
+
+  .container_img_clientes {
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container_clientes img {
+    margin-top: 30px;
+    width: 400px;
+    height: 180px;
+    border-radius: 20px;
+    border: 20px solid white;
+    /* padding: 50px; */
+  }
+
+  .h2_clientes{
+
+    margin-right: 30px;
+  }
+  
+
+  .container_form {
+    display: flex;
+    flex-direction: row-reverse;
+    /* background-color: black; */
+    padding: 60px 30px;
+  }
+
+  .container_form1{
+
+    width: 70vh;
+  }
+
+ 
+}
+  /* ---------------------------- FORMULARIO MOBILE --------------------------- */
+  
+
+
+
+.btn a {
+  color: white;
+}
+
+#footer_button a:hover {
+  color:#0089d1
+}
+
+
+
